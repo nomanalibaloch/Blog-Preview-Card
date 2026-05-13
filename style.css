@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    font-size: 15px;
+}
+body{
+    font-family: "Figtree",serif;
+    background-color: hsl(47, 88%, 63%);
+    margin: 0;
+   
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
+.card{
+    max-width: 382px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: 1em;
+    padding: 1.5em;
+    box-shadow: 0.44em 0.44em 1px 0 hsl(0, 0%, 7%);
+}
+.card img{
+    border-radius: 0.5em;
+    width: 100%;
+}
+.card h4{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 4px;
+    font-weight: 700;
+
+}
+.card h2{
+    font-weight: 800;
+    cursor:pointer;
+}
+.card h2:focus{
+    color: hsl(47, 88%, 63%);
+}
+.published-date{
+    margin-top:0;
+    color: unset;
+}
+.para{
+    color: hsl(0, 0%, 42%);
+    font-weight: 500;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap:1em;
+}
+.profile img{
+    border-radius: 50%;
+    width: 2.2rem;
+}
+.profile p{
+    font-weight: 800;
+}
+.attribution{
+    position: absolute;
+    bottom:5px;
+    padding-left: 1rem;
+}
+@media (width<375px){
+    :root{
+        font-size: 13px;
+    }
+    .card h4,.card h2, .card .para{
+        margin-block: 1rem;
+    }
+}
